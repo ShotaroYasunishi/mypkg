@@ -18,7 +18,6 @@ Foxy Fitzroy
 別端末：$ ros2 run mypkg listener
 
 結果:[INFO] [1703739636.307752007] [listener]: Listen: 38
-[INFO] [1703739636.807541553] [listener]: Listen: 39
 
 ## テスト環境
 Ubuntu 20.04
