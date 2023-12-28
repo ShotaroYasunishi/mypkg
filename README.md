@@ -10,8 +10,9 @@ Foxy Fitzroy
 ## トピック
 
 
-##　実行方法
+## 実行方法
 例
+
 端末：$ ros2 run mypkg talker
 
 別端末：$ ros2 run mypkg listener
