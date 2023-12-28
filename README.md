@@ -1,6 +1,24 @@
-##ros2
+## ros2
+このブランチでは talker.pyの内容にクラスTalkerを作成したものです。
+
+## テスト
 [![test](https://github.com/ShotaroYasunishi/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/ShotaroYasunishi/mypkg/actions/workflows/test.yml)
 
+## 使用しているrosのバージョン
+Foxy Fitzroy
+
+## トピック
+
+
+##　実行方法
+例
+端末：$ ros2 run mypkg talker
+別端末：$ ros2 run mypkg listener
+結果
+C:\Users\yasu7\Pictures\Screenshots\スクリーンショット (214).png
+
+## テスト環境
+Ubuntu 20.04
 
 ## ライセンス
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
