@@ -17,12 +17,19 @@ launchファイルの中にあるので複数のノードを立ち上げるこ�
 ## 実行方法
 ・例1
 
-端末：$ ros2 run mypkg talker
+端末：
+```bash
+$ ros2 run mypkg talker
+```
 
-別端末：$ ros2 run mypkg listener
+別端末：
+```bash
+$ ros2 run mypkg listener
+```
 
 結果:
-'''bash
+
+```bash
 [INFO] [1703739635.815743115] [listener]: Listen: 37
 [INFO] [1703739636.307752007] [listener]: Listen: 38
 [INFO] [1703739636.807541553] [listener]: Listen: 39
@@ -35,11 +42,15 @@ launchファイルの中にあるので複数のノードを立ち上げるこ�
 [INFO] [1703739640.307677835] [listener]: Listen: 46
 [INFO] [1703739640.807987593] [listener]: Listen: 47
 [INFO] [1703739641.307626743] [listener]: Listen: 48
+```
 
 例2
 
-端末$ros2 launch mypkg talk_listen.launch.py
+```bash
+$ros2 launch mypkg talk_listen.launch.py
+```
 
+```bash
 [INFO] [launch]: All log files can be found below /home/yasu3/.ros/log/2023-12-28-16-19-52-684406-yasu1127-1194
 [INFO] [launch]: Default logging verbosity is set to INFO
 [INFO] [talker-1]: process started with pid [1196]
@@ -64,6 +75,7 @@ launchファイルの中にあるので複数のノードを立ち上げるこ�
 [listener-2] [INFO] [1703748002.218101701] [listener]: Listen: 17
 [listener-2] [INFO] [1703748002.718451304] [listener]: Listen: 18
 [listener-2] [INFO] [1703748003.218125841] [listener]: Listen: 19
+```
 
 ・両方の例はctrlとcで終了することができます。
 ## テスト環境
