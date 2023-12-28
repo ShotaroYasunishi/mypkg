@@ -22,7 +22,7 @@ launchファイルの中にあるので複数のノードを立ち上げるこ�
 別端末：$ ros2 run mypkg listener
 
 結果:
-
+'''bash
 [INFO] [1703739635.815743115] [listener]: Listen: 37
 [INFO] [1703739636.307752007] [listener]: Listen: 38
 [INFO] [1703739636.807541553] [listener]: Listen: 39
