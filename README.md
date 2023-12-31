@@ -1,11 +1,11 @@
-## ros2mypkg
+# ros2mypkg
 [![test](https://github.com/ShotaroYasunishi/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/ShotaroYasunishi/mypkg/actions/workflows/test.yml)
 
-## 注意
+# 注意
 使用する際にros2をインストールしていることが必要です。
 
-## mypkgファイル
-# talker.py
+# mypkgファイル
+## talker.py
 ・整数の数を数えてlistener.py送信するために数えたデータをトピックにパブリッシャで送信するノードです。
 数は1ずつ数えていきます。
 トピックは 
@@ -15,7 +15,7 @@
 です。
 送信されるメッセージの型は16ビット符号付き整数です。
 
-# listener.py
+## listener.py
 ・talker.pyから送信されたメッセージをトピックからサブスクライバーで受信するノードです。
 トピックは
 ```bash
@@ -24,15 +24,15 @@
 です。
 別の端末で実行することでtalker.pyからのメッセージの表示ができます。
 
-## launchファイル
+# launchファイル
 複数のノードを一度に立ち上げるファイルです。
 
-# talk_listen.launch.py
+## talk_listen.launch.py
 ・talker.pyとlistener.pyを一度に立ち上げます。
 実行の際に端末を切り替える必要がないので最初から表示することができます。
 
-## 実行方法
-・例1
+# 実行方法
+## 例1
 
 端末：
 ```bash
@@ -61,7 +61,7 @@ $ ros2 run mypkg listener
 [INFO] [1703739641.307626743] [listener]: Listen: 48
 ```
 
-例2
+## 例2
 
 ```bash
 $ros2 launch mypkg talk_listen.launch.py
@@ -95,12 +95,12 @@ $ros2 launch mypkg talk_listen.launch.py
 ```
 
 ・両方の例はctrlとcで終了することができます。
-## テスト環境
+# テスト環境
 ・Ubuntu 20.04
-## 使用しているros2のバージョン
+# 使用しているros2のバージョン
 ・Foxy 
 
-## ライセンス
+# ライセンス
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 * このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
 * [ryuichiueda.github.io/my_slides/robosys_2022/lesson8](https://ryuichiueda.github.io/my_slides/robosys_2022/lesson8)
