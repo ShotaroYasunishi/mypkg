@@ -1,7 +1,11 @@
 ## ros2mypkg
 [![test](https://github.com/ShotaroYasunishi/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/ShotaroYasunishi/mypkg/actions/workflows/test.yml)
 
-## talker.py
+## 注意
+使用する際にros2をインストールしていることが必要です。
+
+## mypkgファイル
+# talker.py
 ・整数の数を数えてlistener.py送信するために数えたデータをトピックにパブリッシャで送信するノードです。
 数は1ずつ数えていきます。
 トピックは 
@@ -11,18 +15,21 @@
 です。
 送信されるメッセージの型は16ビット符号付き整数です。
 
-## listener.py
+# listener.py
 ・talker.pyから送信されたメッセージをトピックからサブスクライバーで受信するノードです。
 トピックは
 ```bash
 /countup
 ```
 です。
-別の端末で実行することでメッセージの表示が可能です。
+別の端末で実行することでtalker.pyからのメッセージの表示ができます。
 
-## talk_listen.launch.py
+## launchファイル
+複数のノードを一度に立ち上げるファイルです。
+
+# talk_listen.launch.py
 ・talker.pyとlistener.pyを一度に立ち上げます。
-launchファイルの中にあるので複数のノードを立ち上げることが可能です。
+実行の際に端末を切り替える必要がないので最初から表示することができます。
 
 ## 実行方法
 ・例1
