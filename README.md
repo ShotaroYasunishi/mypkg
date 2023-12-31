@@ -2,7 +2,7 @@
 [![test](https://github.com/ShotaroYasunishi/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/ShotaroYasunishi/mypkg/actions/workflows/test.yml)
 
 # 注意
-使用する際にros2をインストールしていることが必要です。
+このリポジトリはros2のパッケージです。使用する際にros2をインストールしていることが必要です。
 
 # mypkgファイル
 ## talker.py
